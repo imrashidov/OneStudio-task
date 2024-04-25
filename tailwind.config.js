@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primary: ["Montserrat", "sans-serif"],
+        secondary: ["TT Livret Display Trl"],
+      },
+      backgroundImage: {
+        hero: "url('./src/assets/Hero/hero.png')",
+      },
+    },
   },
   plugins: [],
 };

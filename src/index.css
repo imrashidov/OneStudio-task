@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  @apply font-primary font-medium text-white;
+}
+
+/* Navbar Start */
+.navbar-container {
+  @apply bg-black absolute w-full bg-transparent z-10;
+}
+.navbar-main {
+  @apply flex justify-between items-center px-12 py-5 w-full;
+}
+.navbar-main ul a {
+  @apply relative flex justify-center;
+}
+.navbar-main ul a {
+  @apply after:border-solid after:invisible hover:after:visible after:border-white after:border-2 after:rounded-full after:absolute after:items-center after:bottom-[-8px]  after:justify-center  after:w-0;
+}
+.navbar-left ul,
+.navbar-right ul {
+  @apply flex items-center gap-9;
+}
+.navbar-right {
+  @apply flex items-center gap-9;
+}
+.navbar-help {
+  @apply flex items-center  gap-4;
+}
+.navbar-help button {
+  @apply border border-white px-8 py-[0.625rem] rounded-md hover:bg-white hover:text-black transition-all duration-300;
+}
+.navbar-help select {
+  @apply py-3 px-2 bg-white/10  rounded-md outline-none cursor-pointer;
+}
+.navbar-help select option {
+  @apply bg-neutral-400/[0.8];
+}
+
+/* Navbar End */
+
+/* Hero Section Start */
+.hero-container {
+  @apply relative w-full;
+}
+.hero-overlay {
+  @apply bg-hero h-[1100px] bg-[center_top] w-full bg-cover brightness-50 saturate-100 bg-no-repeat;
+}
+.hero-main {
+  @apply absolute bottom-52 self-center w-full;
+}
+.hero-contact {
+  @apply flex justify-evenly;
+}
+.contact-items {
+  @apply flex items-center gap-4;
+}
+/* Hero Section End */
