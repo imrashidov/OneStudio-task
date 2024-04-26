@@ -1,10 +1,10 @@
 import { PropTypes } from "prop-types";
 import data from "../data/data";
 
-const ApartmentItem = ({ handleItemClick }) => {
+const ApartmentItem = ({ handleItemClick, active }) => {
   return (
     <div className="apt-items">
-      {data.aptItems.map((item) => (
+      {(active === "b" ? data.aptItemsB : data.aptItemsA).map((item) => (
         <div
           className="apt-item"
           key={item.id}
@@ -41,4 +41,5 @@ export default ApartmentItem;
 
 ApartmentItem.propTypes = {
   handleItemClick: PropTypes.func.isRequired,
+  active: PropTypes.string.isRequired,
 };

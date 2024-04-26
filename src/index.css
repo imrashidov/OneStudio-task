@@ -17,10 +17,7 @@ nav * {
   @apply flex justify-between items-center px-12 py-5 w-full;
 }
 .navbar-main ul a {
-  @apply relative flex justify-center;
-}
-.navbar-main ul a {
-  @apply after:border-solid after:invisible hover:after:visible after:border-white after:border-2 after:rounded-full after:absolute after:items-center after:bottom-[-8px]  after:justify-center  after:w-0;
+  @apply relative flex justify-center after:border-solid after:invisible hover:after:visible after:border-white after:border-2 after:rounded-full after:absolute after:items-center after:bottom-[-8px]  after:justify-center  after:w-0;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -100,13 +97,10 @@ nav * {
   @apply !font-secondary text-5xl font-semibold uppercase mb-11;
 }
 .apt-choose {
-  @apply flex justify-center gap-12 text-xl;
-}
-.apt-choose {
-  @apply relative before:border before:border-gray-200 before:absolute  before:w-[277px] before:flex before:bottom-[1px] before:rounded-[3px];
+  @apply relative flex justify-center gap-12 text-xl before:border before:border-gray-200 before:absolute  before:w-[277px] before:flex before:bottom-[1px] before:rounded-[3px];
 }
 .apt-choose button {
-  @apply pb-[13px];
+  @apply pb-[13px] outline-none;
 }
 .apt-choose button.active {
   @apply font-semibold after:border-2 after:border-cyanPrimary after:absolute after:max-w-[79px] after:w-full after:flex  after:bottom-0 after:rounded-[3px];

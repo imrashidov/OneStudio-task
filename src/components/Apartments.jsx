@@ -6,11 +6,11 @@ import ApartmentModal from "./Modals/ApartmentModal";
 
 const Apartments = () => {
   const [active, setActive] = useState("b");
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const handleActive = (id) => {
     setActive(id);
   };
-  const [selectedItem, setSelectedItem] = useState(null);
 
   const handleItemClick = (item) => {
     setSelectedItem(item);
@@ -75,7 +75,7 @@ const Apartments = () => {
           {selectedItem && (
             <ApartmentModal item={selectedItem} onClose={handleCloseModal} />
           )}
-          <ApartmentItem handleItemClick={handleItemClick} />
+          <ApartmentItem handleItemClick={handleItemClick} active={active} />
         </div>
       </div>
     </section>
