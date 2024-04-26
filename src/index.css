@@ -91,9 +91,9 @@ nav * {
   @apply font-semibold;
 }
 .apt-main {
-  @apply flex flex-col items-center justify-center pt-2 px-4;
+  @apply flex flex-col items-center justify-center pt-2 px-4 pb-20;
 }
-.apt-main h1 {
+.main-title h1 {
   @apply !font-secondary text-5xl font-semibold uppercase mb-11;
 }
 .apt-choose {
@@ -171,3 +171,27 @@ nav * {
 }
 
 /* Apartment Modal End */
+
+/* Services Section Start */
+.services-container {
+  @apply px-12;
+}
+.services-main .main-title {
+  @apply flex items-center justify-center pb-14;
+}
+.services-items {
+  @apply flex flex-col  gap-24 px-0;
+}
+.service-item {
+  @apply flex gap-64 justify-center items-center px-20;
+}
+.service-item.service-even {
+  @apply flex-row-reverse;
+}
+.service-description {
+  @apply flex flex-col gap-6 max-w-[528px];
+}
+.service-title {
+  @apply font-secondary text-[40px] leading-[50px] font-semibold uppercase;
+}
+/* Services Section End */

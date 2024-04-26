@@ -19,6 +19,11 @@ import apt4 from "../assets/Apartments/apt4.png";
 import aptIcon1 from "../assets/Apartments/aptIcon1.svg";
 import aptIcon2 from "../assets/Apartments/aptIcon2.svg";
 import aptIcon3 from "../assets/Apartments/aptIcon3.svg";
+// Services
+import service1 from "../assets/Services/service1.png";
+import service2 from "../assets/Services/service2.png";
+import service3 from "../assets/Services/service3.png";
+import service4 from "../assets/Services/service4.png";
 
 const data = {
   navbarRoutes: [
@@ -283,6 +288,36 @@ const data = {
     { id: 7, title: "S.Q 1", value: "3.2m²" },
     { id: 8, title: "S.Q 2", value: "4.6m²" },
     { id: 9, title: "Eyvan", value: "3.3m²" },
+  ],
+  services: [
+    {
+      id: 1,
+      img: service1,
+      title: "Uşaq Meydançası və yaşıl həyət",
+      description:
+        "Hər bir ehtiyac və rahatlığınız üçün uşaq bağçası və uşaq klubu, uşaqlar üçün kafe, həyətdə oturacaqlar, fantan, oyun meydançası, yaşlı adamların istirahəti üçün isə söhbətgahlar mövcuddur.",
+    },
+    {
+      id: 2,
+      img: service2,
+      title: "Texniki Özəllİklər",
+      description:
+        "“Bayıl Marina” - da dünyaca məşhur olan “REHAU” pəncərə sistemləri quraşdırılıb, həmçinin yüksək keyfiyyəti ilə seçilən sürətli və səssiz olan “AKONE” liftləri ilə təchiz olunub.Bütün müasir sistemlər beynəlxalq standartlarına uyğundur və təhlükəsizlik tələblərinə cavab verir. “Bayıl Marina”- da rahatlığınız üçün hər bir şərait var. ",
+    },
+    {
+      id: 3,
+      img: service3,
+      title: "Geniş Yeraltı Parkİng",
+      description:
+        "Binanın geniş yeraltı parkinqi mövcuddur və ərazinin təhlükəsizliyi fasiləsiz video müşahidə kameraları vasitəsilə təmin edilir. Sakinlər parkinqdən liftlərlə birbaşa mənzillərə qalxa bilərlər.",
+    },
+    {
+      id: 4,
+      img: service4,
+      title: "Təhlükəsizliyiniz Prinsipimizdir!",
+      description:
+        "Sakinlərinin təhlükəsizliyini və rahatlığını düşünərək, yüksək keyfiyyətli müşahidə kameraları 7/24 “Bayıl Marina” yaşayış komplesini nəzarət altında saxlayır. Həmçinin mühafizə xidməti də fəaliyyət göstərir, mərkəzi yanğın xəbərdarlığı sistemi var.",
+    },
   ],
 };
 

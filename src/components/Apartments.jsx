@@ -53,7 +53,7 @@ const Apartments = () => {
           </div>
         </div>
         <div className="apt-main">
-          <div className="apt-main-title">
+          <div className="main-title">
             <h1>MƏNZİLLƏR</h1>
             <div className="apt-choose">
               <button
