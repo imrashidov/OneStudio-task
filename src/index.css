@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 * {
-  @apply font-primary font-medium text-white;
+  @apply font-medium font-primary text-bluePrimary;
 }
 
 /* Navbar Start */
+nav * {
+  @apply !text-white;
+}
 .navbar-container {
   @apply bg-black absolute w-full bg-transparent z-10;
 }
@@ -30,7 +33,7 @@
   @apply flex items-center  gap-4;
 }
 .navbar-help button {
-  @apply border border-white px-8 py-[0.625rem] rounded-md hover:bg-white hover:text-black transition-all duration-300;
+  @apply border border-white px-8 py-[0.625rem] rounded-md hover:bg-white hover:!text-black transition-all duration-300;
 }
 .navbar-help select {
   @apply py-3 px-2 bg-white/10  rounded-md outline-none cursor-pointer;
@@ -42,6 +45,9 @@
 /* Navbar End */
 
 /* Hero Section Start */
+#hero * {
+  @apply !text-white;
+}
 .hero-container {
   @apply relative w-full;
 }
@@ -58,3 +64,116 @@
   @apply flex items-center gap-4;
 }
 /* Hero Section End */
+
+/* Apartments Section Start */
+.apt-container {
+  @apply rounded-t-[30px] top-[-140px] relative bg-whiteSecondary;
+}
+.apt-container .contact-icon {
+  @apply absolute rounded-full right-16 top-3;
+}
+.apt-info {
+  @apply py-28 pl-28 pr-[74px] w-full relative grid grid-cols-2 gap-36;
+}
+.apt-left {
+  @apply max-w-[472px];
+}
+.apt-left h1 {
+  @apply !font-secondary text-5xl font-semibold uppercase mb-6;
+}
+.apt-right {
+  @apply grid grid-cols-2 ml-auto h-fit gap-[14px];
+}
+.apt-right-info {
+  @apply flex items-center gap-12 px-14 py-9 w-[350px] bg-white rounded-[10px] shadow-md;
+}
+.apt-right-info img {
+  @apply w-[48px] h-[48px];
+}
+.apt-right-info p {
+  @apply font-semibold;
+}
+.apt-main {
+  @apply flex flex-col items-center justify-center pt-2 px-4;
+}
+.apt-main h1 {
+  @apply !font-secondary text-5xl font-semibold uppercase mb-11;
+}
+.apt-choose {
+  @apply flex justify-center gap-12 text-xl;
+}
+.apt-choose {
+  @apply relative before:border before:border-gray-200 before:absolute  before:w-[277px] before:flex before:bottom-[1px] before:rounded-[3px];
+}
+.apt-choose button {
+  @apply pb-[13px];
+}
+.apt-choose button.active {
+  @apply font-semibold after:border-2 after:border-cyanPrimary after:absolute after:max-w-[79px] after:w-full after:flex  after:bottom-0 after:rounded-[3px];
+}
+
+/* Apartments Section End */
+
+/* Apartment Item Start */
+.apt-items {
+  @apply mt-10 grid grid-cols-4 gap-9;
+}
+.apt-item {
+  @apply px-20 py-10 rounded-[15px] bg-white shadow-md items-center flex flex-col gap-4 relative cursor-pointer;
+}
+.apt-item span {
+  @apply bg-red-500 font-semibold py-1 px-4 rounded-md text-white absolute left-10 top-6;
+}
+.apt-image {
+  @apply text-center font-semibold flex-col items-center justify-start h-full flex gap-7 border-b-2 pb-5;
+}
+.apt-image h5 {
+  @apply mt-auto;
+}
+.apt-details {
+  @apply flex justify-between items-center gap-4 pt-6;
+}
+.apt-detail {
+  @apply flex items-center flex-col gap-2;
+}
+/* Apartment Item End */
+
+/* Apartment Modal Start */
+.apt-modal {
+  @apply bg-grayPrimary/40 items-center flex justify-center  fixed z-30 left-0 top-0 w-full h-screen  overflow-hidden;
+}
+.apt-modal-container {
+  @apply bg-whiteSecondary px-20 pt-16 pb-9 rounded-[20px] justify-center flex flex-col;
+}
+.apt-modal-main {
+  @apply flex gap-28;
+}
+.apt-modal-left {
+  @apply flex flex-col gap-10;
+}
+.apt-modal-img {
+  @apply w-[250px] h-full object-contain;
+}
+.apt-modal-left-buttons {
+  @apply flex flex-col items-start gap-2;
+}
+.apt-modal-contact {
+  @apply bg-white px-5 py-4 rounded-lg flex gap-2 max-w-[220px] w-full;
+}
+.apt-modal-right h3 {
+  @apply text-3xl font-semibold;
+}
+.apt-modal-details {
+  @apply flex justify-between pt-5;
+}
+.apt-modal-details li:nth-child(1) {
+  @apply font-semibold;
+}
+.apt-modal-details li:nth-child(2) {
+  @apply font-bold text-cyanPrimary;
+}
+.apt-modal button {
+  @apply mt-12 w-fit flex self-center p-4 rounded-full border;
+}
+
+/* Apartment Modal End */
