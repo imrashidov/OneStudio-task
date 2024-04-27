@@ -7,6 +7,7 @@ import data from "../../data/data";
 const ApartmentModal = ({ item, onClose }) => {
   return (
     <div className="apt-modal">
+      <div className="apt-modal-overlay" onClick={onClose}></div>
       <div className="apt-modal-container">
         <div className="apt-modal-main">
           <div className="apt-modal-left">

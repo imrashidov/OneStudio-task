@@ -158,7 +158,10 @@ nav * {
   @apply bg-grayPrimary/40 items-center flex justify-center  fixed z-30 left-0 top-0 w-full h-screen  overflow-hidden;
 }
 .apt-modal-container {
-  @apply bg-whiteSecondary px-20 pt-16 pb-9 rounded-[20px] justify-center flex flex-col;
+  @apply bg-whiteSecondary px-20 pt-16 pb-9 rounded-[20px] z-10 justify-center flex flex-col;
+}
+.apt-modal-overlay {
+  @apply absolute w-full h-full;
 }
 .apt-modal-main {
   @apply flex gap-28;
