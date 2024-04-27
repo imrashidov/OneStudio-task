@@ -5,6 +5,9 @@
 * {
   @apply font-medium font-primary text-bluePrimary;
 }
+body {
+  @apply bg-whiteSecondary;
+}
 
 /* Navbar Start */
 nav * {
@@ -282,13 +285,13 @@ nav * {
 
 /* Contact Section Start */
 .contact-container {
-  @apply bg-contact bg-no-repeat h-[816px] w-full bg-cover bg-[left_center] relative;
+  @apply bg-contact bg-no-repeat max-md:justify-center max-md:flex max-md:items-center h-[816px] max-md:h-[1300px] w-full bg-cover bg-[left_center] max-md:bg-[bottom_right] max-md:bg-[length:800px_600px] max-sm:bg-[length:600px_600px]  relative;
 }
 .contact-main {
-  @apply flex items-center justify-between h-full px-28 gap-[300px] w-full;
+  @apply flex items-center justify-between max-md:justify-center max-md:flex-col h-full px-28 max-md:px-0  gap-[300px] max-md:gap-[20px] w-full;
 }
 .contact-info {
-  @apply bg-white w-full px-12 py-14 rounded-[15px] max-w-[402px];
+  @apply bg-white w-full px-12 py-14 rounded-[15px] max-w-[402px] max-md:max-w-[100%];
 }
 .contact-info h4 {
   @apply mb-6 !font-secondary font-semibold text-[32px] w-fit;
@@ -306,10 +309,11 @@ nav * {
   @apply flex w-[22px] h-[22px] gap-5 mt-2 cursor-pointer;
 }
 .contact-pin-img {
-  @apply rounded-[25px] bg-hero bg-cover w-[236px] h-[309px]  bg-center bg-no-repeat;
+  @apply rounded-[25px] bg-hero bg-cover w-[236px] h-[309px] bg-center bg-no-repeat;
 }
 .contact-pin {
   margin-right: calc(27vw - 540px / 4);
+  @apply max-md:self-center max-md:mr-0 max-md:mt-20;
 }
 /* Contact Section End */
 
