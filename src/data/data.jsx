@@ -58,6 +58,11 @@ const data = {
       name: "Əlaqə",
       route: "/",
     },
+    {
+      id: 6,
+      name: "Kataloq",
+      route: "/",
+    },
   ],
   heroContact: [
     { id: 1, icon: phone, text: "(+994 77) 350-00-05" },

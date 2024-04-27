@@ -280,3 +280,42 @@ nav * {
   margin-right: calc(27vw - 540px / 4);
 }
 /* Contact Section End */
+
+/* Footer Start */
+footer {
+  @apply relative bg-white rounded-t-[30px] top-[-30px];
+}
+.footer-container {
+  @apply w-full pt-10;
+}
+.footer-main {
+  @apply flex items-center justify-center;
+}
+.footer-main img {
+  @apply mr-16;
+}
+.footer-links ul {
+  @apply flex gap-10;
+}
+.footer-links ul a {
+  @apply font-semibold relative flex items-center justify-center text-[17px]  after:invisible hover:after:visible after:border-bluePrimary after:border-2 after:rounded-full after:absolute after:items-center after:bottom-[-8px]  after:justify-center  after:w-0;
+}
+.footer-main button {
+  @apply ml-24 border-2 border-gray-300 rounded-full w-[68px] h-[68px] items-center justify-center flex outline-none;
+}
+.footer-copyright {
+  @apply flex justify-center items-center gap-2 mt-5;
+}
+.footer-copyright span:first-of-type {
+  @apply font-semibold;
+}
+.footer-copyright p:first-of-type {
+  @apply text-bluePrimary/45 font-semibold;
+}
+.footer-copyright span:last-of-type {
+  @apply text-bluePrimary/45 text-[14px];
+}
+.footer-copyright p:last-of-type {
+  @apply font-semibold border-b-2 border-bluePrimary;
+}
+/* Footer End */
