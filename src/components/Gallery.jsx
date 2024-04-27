@@ -23,15 +23,15 @@ const Gallery = () => {
           breakpoints={{
             0: {
               slidesPerView: 3,
-              spaceBetween: 20,
+              spaceBetween: 0,
             },
             640: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 0,
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 40,
+              spaceBetween: 0,
             },
             1024: {
               slidesPerView: 4,
