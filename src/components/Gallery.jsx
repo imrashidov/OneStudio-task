@@ -44,17 +44,22 @@ const Gallery = () => {
             depth: 0,
             modifier: 0,
           }}
-          pagination={{ el: ".swiper-pagination", clickable: true }}
+          pagination={{
+            el: ".gallery-pagination",
+            clickable: true,
+            bulletClass: "gallery-bullet",
+            bulletActiveClass: "gallery-bullet-active",
+          }}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
             clickable: true,
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
-          className="gallery-slider"
+          className="swiper-gallery"
         >
           {data.galleryItems.map((item) => (
-            <SwiperSlide key={item.id}>
+            <SwiperSlide key={item.id} className="swiper-gallery-slide">
               <img src={item.img} alt="slide_image" />
             </SwiperSlide>
           ))}
@@ -62,7 +67,7 @@ const Gallery = () => {
           <div className="gallery-controller">
             <button className="swiper-button-prev"></button>
             <button className="swiper-button-next"></button>
-            <div className="swiper-pagination"></div>
+            <div className="gallery-pagination"></div>
           </div>
         </Swiper>
       </div>

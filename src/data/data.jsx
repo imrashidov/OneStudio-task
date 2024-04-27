@@ -1,4 +1,5 @@
 // Hero Logos
+import hero from "../assets/Hero/hero.png";
 import phone from "../assets/Hero/phone.svg";
 import location from "../assets/Hero/location.svg";
 import social1 from "../assets/Hero/social1.svg";
@@ -63,6 +64,11 @@ const data = {
       name: "Kataloq",
       route: "/",
     },
+  ],
+  heroImg: [
+    { id: 1, img: hero },
+    { id: 2, img: hero },
+    { id: 3, img: hero },
   ],
   heroContact: [
     { id: 1, icon: phone, text: "(+994 77) 350-00-05" },

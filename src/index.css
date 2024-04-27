@@ -48,8 +48,23 @@ nav * {
 .hero-container {
   @apply relative w-full;
 }
-.hero-overlay {
-  @apply bg-hero h-[1100px] bg-center w-full  brightness-50 saturate-100 bg-no-repeat;
+.swiper-hero {
+  @apply h-[1100px] w-full z-0;
+}
+.swiper-hero-slide {
+  @apply brightness-50 saturate-100;
+}
+.swiper-hero-slide img {
+  @apply w-full h-full object-cover;
+}
+.hero-pagination {
+  @apply flex flex-col z-[99] items-center  justify-center gap-[16px] absolute  mr-20 mb-1;
+}
+.hero-bullet {
+  @apply bg-white w-[9px] h-[9px] rounded-full cursor-pointer;
+}
+.hero-bullet-active {
+  @apply outline outline-1 outline-offset-8 bg-white;
 }
 .hero-main {
   @apply absolute bottom-52 self-center w-full;
@@ -116,7 +131,7 @@ nav * {
   @apply mt-10 grid grid-cols-4 gap-9;
 }
 .apt-item {
-  @apply py-10 px-2 rounded-[15px] bg-white shadow-md items-center flex flex-col gap-4 relative cursor-pointer;
+  @apply py-10 rounded-[15px] bg-white shadow-md items-center flex flex-col gap-4 relative cursor-pointer;
 }
 .apt-item span {
   @apply bg-red-500 font-semibold py-1 px-4 rounded-md text-white absolute left-10 top-6;
@@ -212,13 +227,13 @@ nav * {
 .gallery-main .main-title {
   @apply flex items-center justify-center;
 }
-.gallery-slider {
+.swiper-gallery {
   @apply rounded-[15px] overflow-hidden mt-14 h-full py-16 pb-28;
 }
-.swiper-slide-active img {
+.swiper-gallery .swiper-slide-active img {
   @apply transition-all duration-500 z-[9999]  scale-125;
 }
-.swiper-slide img {
+.swiper-gallery-slide img {
   @apply h-[493px] object-cover rounded-[15px] brightness-75;
 }
 .swiper-slide-next,
@@ -239,14 +254,14 @@ nav * {
 .swiper-button-prev {
   @apply left-14;
 }
-.swiper-pagination {
-  @apply mt-4 flex justify-center gap-[11px] mb-1;
+.gallery-pagination {
+  @apply mt-4 flex z-[99] justify-center gap-[16px] bottom-0 absolute mb-1;
 }
-.swiper-pagination-bullet {
-  @apply bg-bluePrimary w-[9px] h-[9px];
+.gallery-bullet {
+  @apply bg-gray-300 w-[9px] h-[9px] rounded-full cursor-pointer;
 }
-.swiper-pagination-bullet-active {
-  @apply outline outline-1 outline-offset-8;
+.gallery-bullet-active {
+  @apply outline outline-1 outline-offset-8 bg-bluePrimary;
 }
 
 /* Gallery Section End */
