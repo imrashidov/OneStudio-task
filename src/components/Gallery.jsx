@@ -26,7 +26,7 @@ const Gallery = () => {
               spaceBetween: 0,
             },
             640: {
-              slidesPerView: 2,
+              slidesPerView: 3,
               spaceBetween: 0,
             },
             768: {
@@ -35,7 +35,11 @@ const Gallery = () => {
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 50,
+              spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 4,
+              spaceBetween: 30,
             },
           }}
           coverflowEffect={{
