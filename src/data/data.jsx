@@ -1,5 +1,5 @@
 // Hero Logos
-import hero from "../../public/hero.png";
+import hero from "../assets/Hero/hero.png";
 import phone from "../assets/Hero/phone.svg";
 import location from "../assets/Hero/location.svg";
 import social1 from "../assets/Hero/social1.svg";

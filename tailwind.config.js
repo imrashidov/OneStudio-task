@@ -8,8 +8,8 @@ export default {
         secondary: ["TT Livret Display Trl"],
       },
       backgroundImage: {
-        hero: "url('/public/hero.png')",
-        contact: "url('./public/contactMap.png')",
+        hero: "url('../src/assets/Hero/hero.png')",
+        contact: "url('../src/assets/Contact/contactMap.png')",
       },
       colors: {
         bluePrimary: "#142949",

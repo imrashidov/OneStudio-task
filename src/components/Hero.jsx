@@ -1,5 +1,5 @@
 import data from "../data/data";
-import hero from "../../public/hero.png";
+import hero from "../assets/Hero/hero.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
