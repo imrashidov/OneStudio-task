@@ -70,7 +70,7 @@ nav * {
   @apply absolute rounded-full right-16 top-3;
 }
 .apt-info {
-  @apply py-28 pl-28 pr-[74px] w-full relative grid grid-cols-2 gap-36;
+  @apply py-28 pl-28 pr-[74px] w-full relative grid grid-cols-2 gap-20;
 }
 .apt-left {
   @apply max-w-[472px];
@@ -79,10 +79,10 @@ nav * {
   @apply !font-secondary text-5xl font-semibold uppercase mb-6;
 }
 .apt-right {
-  @apply grid grid-cols-2 ml-auto h-fit gap-[14px];
+  @apply grid grid-cols-2 h-fit w-full gap-[14px] relative;
 }
 .apt-right-info {
-  @apply flex items-center gap-12 px-14 py-9 w-[350px] bg-white rounded-[10px] shadow-md;
+  @apply flex items-center gap-12 px-14 py-9 w-full bg-white rounded-[10px] shadow-md;
 }
 .apt-right-info img {
   @apply w-[48px] h-[48px];
