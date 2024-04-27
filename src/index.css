@@ -171,13 +171,13 @@ nav * {
   @apply bg-grayPrimary/40 items-center flex justify-center fixed z-30 left-0 top-0 w-full h-screen overflow-hidden;
 }
 .apt-modal-container {
-  @apply bg-whiteSecondary px-20 pt-16 pb-9 rounded-[20px] z-10 justify-center flex flex-col max-md:px-5 max-md:pt-10 max-md:pb-5;
+  @apply bg-whiteSecondary mx-2 px-20 pt-16 pb-9 rounded-[20px] z-10 justify-center flex flex-col max-md:px-5 max-md:pt-10 max-md:pb-5;
 }
 .apt-modal-overlay {
   @apply absolute w-full h-full;
 }
 .apt-modal-main {
-  @apply flex gap-28 max-md:flex;
+  @apply flex gap-28 max-sm:gap-2;
 }
 .apt-modal-left {
   @apply flex flex-col gap-10;
@@ -189,10 +189,13 @@ nav * {
   @apply flex flex-col items-start gap-2;
 }
 .apt-modal-contact {
-  @apply bg-white px-5 py-4 rounded-lg flex gap-2 max-w-[220px] w-full;
+  @apply bg-white px-5 py-4 max-sm:px-2 max-sm:py-3 rounded-lg flex gap-2 max-w-[220px] w-full;
+}
+.apt-modal-contact p {
+  @apply max-sm:text-sm;
 }
 .apt-modal-right h3 {
-  @apply text-3xl font-semibold;
+  @apply text-3xl font-semibold max-md:text-2xl;
 }
 .apt-modal-details {
   @apply flex justify-between pt-5;
