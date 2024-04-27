@@ -116,19 +116,22 @@ nav * {
   @apply mt-10 grid grid-cols-4 gap-9;
 }
 .apt-item {
-  @apply px-20 py-10 rounded-[15px] bg-white shadow-md items-center flex flex-col gap-4 relative cursor-pointer;
+  @apply py-10 px-2 rounded-[15px] bg-white shadow-md items-center flex flex-col gap-4 relative cursor-pointer;
 }
 .apt-item span {
   @apply bg-red-500 font-semibold py-1 px-4 rounded-md text-white absolute left-10 top-6;
 }
 .apt-image {
-  @apply text-center font-semibold flex-col items-center justify-start h-full flex gap-7 border-b-2 pb-5;
+  @apply text-center w-full font-semibold flex-col items-center justify-start h-full flex gap-7 px-20;
+}
+.apt-image img {
+  @apply w-full h-full object-contain;
 }
 .apt-image h5 {
   @apply mt-auto;
 }
 .apt-details {
-  @apply flex justify-between items-center gap-4 pt-6;
+  @apply flex justify-center items-center gap-4 pt-6 w-full border-t-2 pb-5;
 }
 .apt-detail {
   @apply flex items-center flex-col gap-2;
