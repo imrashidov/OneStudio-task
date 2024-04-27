@@ -29,10 +29,14 @@ const Footer = () => {
           </button>
         </div>
         <div className="footer-copyright">
-          <span>© Bayıl Marina</span>
-          <p>2023. All rights reserved</p>
-          <span>Site by</span>
-          <p>One Studio</p>
+          <div className="footer-copyright-left">
+            <span>© Bayıl Marina</span>
+            <p>2023. All rights reserved</p>
+          </div>
+          <div className="footer-copyright-right">
+            <span>Site by</span>
+            <p>One Studio</p>
+          </div>
         </div>
       </div>
     </footer>

@@ -5,9 +5,6 @@
 * {
   @apply font-medium font-primary text-bluePrimary;
 }
-body {
-  @apply bg-whiteSecondary;
-}
 
 /* Navbar Start */
 nav * {
@@ -39,7 +36,7 @@ nav * {
   @apply max-lg:hidden border border-white px-8 py-[0.625rem] rounded-md hover:bg-white hover:!text-black transition-all duration-300;
 }
 .navbar-help select {
-  @apply max-lg:bg-transparent py-3 px-2 bg-white/10  rounded-md outline-none cursor-pointer;
+  @apply max-lg:bg-transparent max-lg:p-0 py-3  px-2 bg-white/10  rounded-md outline-none cursor-pointer;
 }
 .navbar-help select option {
   @apply bg-neutral-400/[0.8];
@@ -89,6 +86,9 @@ nav * {
 /* Hero Section End */
 
 /* Apartments Section Start */
+#apartments {
+  @apply bg-whiteSecondary;
+}
 .apt-container {
   @apply rounded-t-[30px] top-[-140px] relative bg-whiteSecondary;
 }
@@ -210,6 +210,9 @@ nav * {
 /* Apartment Modal End */
 
 /* Services Section Start */
+#services {
+  @apply bg-whiteSecondary;
+}
 .services-container {
   @apply px-12 pb-40;
 }
@@ -238,6 +241,9 @@ nav * {
 /* Services Section End */
 
 /* Gallery Section Start */
+#gallery {
+  @apply bg-whiteSecondary;
+}
 .gallery-main {
   @apply pb-28;
 }
@@ -325,33 +331,37 @@ footer {
   @apply w-full pt-10;
 }
 .footer-main {
-  @apply flex items-center justify-center;
+  @apply flex gap-16 items-center justify-center max-lg:flex-col max-lg:gap-12;
 }
 .footer-main img {
-  @apply mr-16;
+  @apply self-start ml-14;
 }
 .footer-links ul {
-  @apply flex gap-10;
+  @apply flex gap-10 max-lg:grid max-lg:grid-cols-2 max-lg:gap-x-28 max-lg:gap-y-4 max-lg:pb-10;
 }
 .footer-links ul a {
-  @apply font-semibold relative flex items-center justify-center text-[17px]  after:invisible hover:after:visible after:border-bluePrimary after:border-2 after:rounded-full after:absolute after:items-center after:bottom-[-8px]  after:justify-center  after:w-0;
+  @apply max-lg:justify-start font-semibold relative flex items-center justify-center text-[17px]  after:invisible hover:after:visible after:border-bluePrimary after:border-2 after:rounded-full after:absolute after:items-center after:bottom-[-8px] after:justify-center after:w-0;
 }
 .footer-main button {
-  @apply ml-24 border-2 border-gray-300 rounded-full w-[68px] h-[68px] items-center justify-center flex outline-none;
+  @apply ml-24 border-2 border-gray-300 rounded-full w-[68px] h-[68px] items-center justify-center flex outline-none max-lg:absolute max-lg:right-14 max-lg:top-12;
 }
 .footer-copyright {
-  @apply flex justify-center items-center gap-2 mt-5;
+  @apply flex justify-center items-center gap-2 mt-5 max-lg:flex-col;
 }
-.footer-copyright span:first-of-type {
+.footer-copyright-left,
+.footer-copyright-right {
+  @apply flex gap-1 items-center;
+}
+.footer-copyright-left span {
   @apply font-semibold;
 }
-.footer-copyright p:first-of-type {
-  @apply text-bluePrimary/45 font-semibold;
+.footer-copyright-left p {
+  @apply font-semibold text-graySecondary;
 }
-.footer-copyright span:last-of-type {
-  @apply text-bluePrimary/45 text-[14px];
+.footer-copyright-right span {
+  @apply text-graySecondary;
 }
-.footer-copyright p:last-of-type {
+.footer-copyright-right p {
   @apply font-semibold border-b-2 border-bluePrimary;
 }
 /* Footer End */
