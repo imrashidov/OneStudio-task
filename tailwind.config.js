@@ -9,12 +9,14 @@ export default {
       },
       backgroundImage: {
         hero: "url('./src/assets/Hero/hero.png')",
+        contact: "url('./src/assets/Contact/contactMap.png')",
       },
       colors: {
         bluePrimary: "#142949",
         whiteSecondary: "#F6F7F9",
         cyanPrimary: "#57ACA3",
         grayPrimary: "#868686",
+        graySecondary: "#54585F",
       },
     },
   },

@@ -203,7 +203,9 @@ nav * {
 /* Services Section End */
 
 /* Gallery Section Start */
-
+.gallery-main {
+  @apply pb-28;
+}
 .gallery-main .main-title {
   @apply flex items-center justify-center;
 }
@@ -215,9 +217,6 @@ nav * {
 }
 .swiper-slide img {
   @apply h-[493px] object-cover rounded-[15px] brightness-75;
-}
-.swiper-coverflow {
-  @apply relative;
 }
 .swiper-slide-next,
 .swiper-slide-prev {
@@ -238,7 +237,7 @@ nav * {
   @apply left-14;
 }
 .swiper-pagination {
-  @apply mt-4 flex justify-center gap-[11px];
+  @apply mt-4 flex justify-center gap-[11px] mb-1;
 }
 .swiper-pagination-bullet {
   @apply bg-bluePrimary w-[9px] h-[9px];
@@ -248,3 +247,36 @@ nav * {
 }
 
 /* Gallery Section End */
+
+/* Contact Section Start */
+.contact-container {
+  @apply bg-contact bg-no-repeat h-[816px] w-full bg-cover bg-[left_center] relative;
+}
+.contact-main {
+  @apply flex items-center justify-between h-full px-28 gap-[300px] w-full;
+}
+.contact-info {
+  @apply bg-white w-full px-12 py-14 rounded-[15px] max-w-[402px];
+}
+.contact-info h4 {
+  @apply mb-6 !font-secondary font-semibold text-[32px] w-fit;
+}
+.contact-details {
+  @apply flex flex-col gap-6 min-w-[300px];
+}
+.contact-details li span {
+  @apply text-graySecondary w-fit;
+}
+.contact-details li p {
+  @apply font-semibold max-w-[275px];
+}
+.contact-socials {
+  @apply flex w-[22px] h-[22px] gap-5 mt-2 cursor-pointer;
+}
+.contact-pin-img {
+  @apply rounded-[25px] bg-hero bg-cover w-[236px] h-[309px]  bg-center bg-no-repeat;
+}
+.contact-pin {
+  margin-right: calc(27vw - 540px / 4);
+}
+/* Contact Section End */
