@@ -43,7 +43,7 @@ const Hero = () => {
               <div key={contact.id} className="contact-items">
                 {contact.icon && <img src={contact.icon} alt="icon" />}
                 <p>{contact.text}</p>
-                {contact.title && <p>{contact.title}</p>}
+                <p>{contact.title}</p>
                 {contact.icons &&
                   contact.icons.map((icon) => (
                     <img key={icon.id} src={icon.icon} alt="icon" />

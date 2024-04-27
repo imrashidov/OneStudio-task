@@ -31,6 +31,12 @@ import gallery2 from "../assets/Gallery/gallery2.jpeg";
 import gallery3 from "../assets/Gallery/gallery3.jpeg";
 import gallery4 from "../assets/Gallery/gallery4.jpeg";
 import gallery5 from "../assets/Gallery/gallery5.jpeg";
+// Navbar Menu
+import phone2 from "../assets/Navbar/phone2.svg";
+import location2 from "../assets/Navbar/location2.svg";
+import social4 from "../assets/Navbar/social4.svg";
+import social5 from "../assets/Navbar/social5.svg";
+import social6 from "../assets/Navbar/social6.svg";
 
 const data = {
   navbarRoutes: [
@@ -80,6 +86,23 @@ const data = {
         { id: 1, icon: social1 },
         { id: 2, icon: social2 },
         { id: 3, icon: social3 },
+      ],
+    },
+  ],
+  navbarContact: [
+    { id: 1, icon: phone2, text: "(+994 77) 350-00-05" },
+    {
+      id: 2,
+      icon: location2,
+      text: "Bayıl Neftçi Qurban Abbasov küçəsi 42/44",
+    },
+    {
+      id: 3,
+      title: "Sosial:",
+      icons: [
+        { id: 1, icon: social4 },
+        { id: 2, icon: social5 },
+        { id: 3, icon: social6 },
       ],
     },
   ],
