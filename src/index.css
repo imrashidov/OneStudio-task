@@ -108,7 +108,7 @@ nav * {
   @apply grid grid-cols-2 h-fit w-full gap-[14px] relative;
 }
 .apt-right-info {
-  @apply flex items-center justify-center gap-12 px-14 py-9 w-full bg-white rounded-[10px] shadow-md max-lg:flex-col max-lg:items-start max-lg:p-5 max-lg:gap-3;
+  @apply flex items-center gap-12 px-14 py-9 w-full bg-white rounded-[10px] shadow-md max-lg:flex-col max-lg:items-start max-lg:p-5 max-lg:gap-3;
 }
 .apt-right-info img {
   @apply w-[48px] h-[48px] max-lg:self-start;
