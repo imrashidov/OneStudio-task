@@ -17,11 +17,14 @@ nav * {
   @apply flex justify-between items-center px-12 py-5 w-full;
 }
 .navbar-main ul a {
-  @apply relative flex justify-center after:border-solid after:invisible hover:after:visible after:border-white after:border-2 after:rounded-full after:absolute after:items-center after:bottom-[-8px]  after:justify-center  after:w-0;
+  @apply max-lg:hidden relative  flex justify-center after:border-solid after:invisible hover:after:visible after:border-white after:border-2 after:rounded-full after:absolute after:items-center after:bottom-[-8px]  after:justify-center  after:w-0;
+}
+.navbar-menu {
+  @apply lg:hidden flex items-center;
 }
 .navbar-left ul,
 .navbar-right ul {
-  @apply flex items-center gap-9;
+  @apply max-lg:hidden flex items-center gap-9;
 }
 .navbar-right {
   @apply flex items-center gap-9;
@@ -30,10 +33,10 @@ nav * {
   @apply flex items-center  gap-4;
 }
 .navbar-help button {
-  @apply border border-white px-8 py-[0.625rem] rounded-md hover:bg-white hover:!text-black transition-all duration-300;
+  @apply max-lg:hidden border border-white px-8 py-[0.625rem] rounded-md hover:bg-white hover:!text-black transition-all duration-300;
 }
 .navbar-help select {
-  @apply py-3 px-2 bg-white/10  rounded-md outline-none cursor-pointer;
+  @apply max-lg:bg-transparent py-3 px-2 bg-white/10  rounded-md outline-none cursor-pointer;
 }
 .navbar-help select option {
   @apply bg-neutral-400/[0.8];
@@ -46,19 +49,24 @@ nav * {
   @apply !text-white;
 }
 .hero-container {
-  @apply relative w-full;
+  @apply w-full;
 }
 .swiper-hero {
-  @apply h-[1100px] w-full z-0;
+  @apply max-lg:h-[950px] h-[1100px] w-full z-0 relative;
 }
 .swiper-hero-slide {
   @apply brightness-50 saturate-100;
 }
 .swiper-hero-slide img {
-  @apply w-full h-full object-cover;
+  @apply w-full h-full object-cover flex justify-center;
+}
+
+.swiper-vertical > .swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets {
+  @apply max-lg:!left-0 max-lg:!top-0 max-lg:!right-0 max-lg:!flex max-lg:!justify-center;
 }
 .hero-pagination {
-  @apply flex flex-col z-[99] items-center  justify-center gap-[16px] absolute  mr-20 mb-1;
+  @apply max-lg:flex-row max-lg:bottom-0 max-lg:self-end max-lg:mb-40 max-lg:items-center max-lg:mr-0 flex flex-col z-[99] items-center justify-center gap-[16px] absolute mr-20 mb-1;
 }
 .hero-bullet {
   @apply bg-white w-[9px] h-[9px] rounded-full cursor-pointer;
@@ -70,7 +78,7 @@ nav * {
   @apply absolute bottom-52 self-center w-full;
 }
 .hero-contact {
-  @apply flex justify-evenly;
+  @apply max-lg:hidden flex justify-evenly;
 }
 .contact-items {
   @apply flex items-center gap-4;

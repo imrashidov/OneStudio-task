@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import data from "../data/data";
 import logo from "../assets/logo.svg";
+import menuMobile from "../assets/menuMobile.svg";
 
 const Navbar = () => {
   return (
@@ -8,6 +9,9 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-main">
           <div className="navbar-left">
+            <button className="navbar-menu">
+              <img src={menuMobile} alt="Menu" />
+            </button>
             <ul>
               {data.navbarRoutes.slice(0, 3).map((route) => (
                 <Link key={route.id}>{route.name}</Link>

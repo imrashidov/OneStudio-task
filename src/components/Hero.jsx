@@ -12,8 +12,9 @@ const Hero = () => {
       <div className="hero-container relative ">
         <Swiper
           className="swiper-hero"
-          direction={"vertical"}
+          direction={"horizontal"}
           loop={true}
+          initialSlide={1}
           pagination={{
             el: ".hero-pagination",
             clickable: true,
@@ -21,6 +22,11 @@ const Hero = () => {
             bulletActiveClass: "hero-bullet-active",
           }}
           modules={[Pagination]}
+          breakpoints={{
+            1024: {
+              direction: "vertical",
+            },
+          }}
         >
           {data.heroImg.map((img) => (
             <SwiperSlide key={img.id} className="swiper-hero-slide">
