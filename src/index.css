@@ -90,25 +90,25 @@ nav * {
   @apply rounded-t-[30px] top-[-140px] relative bg-whiteSecondary;
 }
 .apt-container .contact-icon {
-  @apply absolute rounded-full right-16 top-3;
+  @apply absolute rounded-full right-16 top-3 max-lg:top-[-150px] max-lg:right-8;
 }
 .apt-info {
-  @apply py-28 pl-28 pr-[74px] w-full relative grid grid-cols-2 gap-20;
+  @apply py-28 pl-28 pr-[74px] w-full relative grid grid-cols-2 gap-20 max-lg:py-16 max-lg:px-5 max-lg:grid-cols-1;
 }
 .apt-left {
   @apply max-w-[472px];
 }
 .apt-left h1 {
-  @apply !font-secondary text-5xl font-semibold uppercase mb-6;
+  @apply !font-secondary text-5xl font-semibold uppercase mb-6 max-lg:text-4xl;
 }
 .apt-right {
   @apply grid grid-cols-2 h-fit w-full gap-[14px] relative;
 }
 .apt-right-info {
-  @apply flex items-center gap-12 px-14 py-9 w-full bg-white rounded-[10px] shadow-md;
+  @apply flex items-center gap-12 px-14 py-9 w-full bg-white rounded-[10px] shadow-md max-lg:flex-col max-lg:p-5 max-lg:gap-3;
 }
 .apt-right-info img {
-  @apply w-[48px] h-[48px];
+  @apply w-[48px] h-[48px] max-lg:self-start;
 }
 .apt-right-info p {
   @apply font-semibold;
@@ -117,7 +117,7 @@ nav * {
   @apply flex flex-col items-center justify-center pt-2 px-4 pb-20;
 }
 .main-title h1 {
-  @apply !font-secondary text-5xl font-semibold uppercase;
+  @apply !font-secondary text-5xl font-semibold uppercase max-lg:text-4xl;
 }
 .apt-main .main-title h1 {
   @apply mb-11;
@@ -136,19 +136,21 @@ nav * {
 
 /* Apartment Item Start */
 .apt-items {
-  @apply mt-10 grid grid-cols-4 gap-9;
+  @apply mt-10 grid grid-cols-4 gap-9 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1;
 }
-.apt-item {
+.apt-item,
+.apt-item-2 {
   @apply py-10 rounded-[15px] bg-white shadow-md items-center flex flex-col gap-4 relative cursor-pointer;
 }
-.apt-item span {
+.apt-item span,
+.apt-item-2 span {
   @apply bg-red-500 font-semibold py-1 px-4 rounded-md text-white absolute left-10 top-6;
+}
+.apt-item-2 {
+  @apply max-md:hidden;
 }
 .apt-image {
   @apply text-center w-full font-semibold flex-col items-center justify-start h-full flex gap-7 px-20;
-}
-.apt-image img {
-  @apply w-full h-full object-contain;
 }
 .apt-image h5 {
   @apply mt-auto;
@@ -163,16 +165,16 @@ nav * {
 
 /* Apartment Modal Start */
 .apt-modal {
-  @apply bg-grayPrimary/40 items-center flex justify-center  fixed z-30 left-0 top-0 w-full h-screen  overflow-hidden;
+  @apply bg-grayPrimary/40 items-center flex justify-center fixed z-30 left-0 top-0 w-full h-screen overflow-hidden;
 }
 .apt-modal-container {
-  @apply bg-whiteSecondary px-20 pt-16 pb-9 rounded-[20px] z-10 justify-center flex flex-col;
+  @apply bg-whiteSecondary px-20 pt-16 pb-9 rounded-[20px] z-10 justify-center flex flex-col max-md:px-5 max-md:pt-10 max-md:pb-5;
 }
 .apt-modal-overlay {
   @apply absolute w-full h-full;
 }
 .apt-modal-main {
-  @apply flex gap-28;
+  @apply flex gap-28 max-md:flex;
 }
 .apt-modal-left {
   @apply flex flex-col gap-10;
@@ -211,23 +213,24 @@ nav * {
 .services-main .main-title {
   @apply flex items-center justify-center pb-14;
 }
+
 .services-items {
-  @apply flex flex-col  gap-24;
+  @apply flex flex-col gap-24;
 }
 .service-item {
-  @apply flex gap-28 justify-evenly items-center;
+  @apply flex gap-28 justify-evenly items-center max-md:flex-col max-md:gap-9;
 }
 .service-item.service-even {
-  @apply flex-row-reverse;
+  @apply flex-row-reverse max-md:flex-col;
 }
 .service-img {
-  @apply w-[668px] h-[478px] flex items-center;
+  @apply w-[668px] h-[478px] max-md:w-full max-md:h-full flex items-center;
 }
 .service-description {
-  @apply flex flex-col gap-6 w-[458px];
+  @apply flex flex-col gap-6 w-[458px] max-md:w-full;
 }
 .service-title {
-  @apply font-secondary text-[40px] leading-[50px] font-semibold uppercase;
+  @apply font-secondary text-[40px] leading-[50px] font-semibold uppercase max-md:text-[26px] max-md:leading-8;
 }
 /* Services Section End */
 
