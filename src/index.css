@@ -94,7 +94,10 @@ nav * {
   @apply flex flex-col items-center justify-center pt-2 px-4 pb-20;
 }
 .main-title h1 {
-  @apply !font-secondary text-5xl font-semibold uppercase mb-11;
+  @apply !font-secondary text-5xl font-semibold uppercase;
+}
+.apt-main .main-title h1 {
+  @apply mb-11;
 }
 .apt-choose {
   @apply relative flex justify-center gap-12 text-xl before:border before:border-gray-200 before:absolute  before:w-[277px] before:flex before:bottom-[1px] before:rounded-[3px];
@@ -174,7 +177,7 @@ nav * {
 
 /* Services Section Start */
 .services-container {
-  @apply px-12;
+  @apply px-12 pb-40;
 }
 .services-main .main-title {
   @apply flex items-center justify-center pb-14;
@@ -198,3 +201,50 @@ nav * {
   @apply font-secondary text-[40px] leading-[50px] font-semibold uppercase;
 }
 /* Services Section End */
+
+/* Gallery Section Start */
+
+.gallery-main .main-title {
+  @apply flex items-center justify-center;
+}
+.gallery-slider {
+  @apply rounded-[15px] overflow-hidden mt-14 h-full py-16 pb-28;
+}
+.swiper-slide-active img {
+  @apply transition-all duration-500 z-[9999]  scale-125;
+}
+.swiper-slide img {
+  @apply h-[493px] object-cover rounded-[15px] brightness-75;
+}
+.swiper-coverflow {
+  @apply relative;
+}
+.swiper-slide-next,
+.swiper-slide-prev {
+  @apply !z-[-1];
+}
+.swiper-button-next,
+.swiper-button-prev {
+  @apply !stroke-white !fill-white !text-white !px-7 !py-7 border rounded-full;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  @apply text-[16px];
+}
+.swiper-button-next {
+  @apply right-14;
+}
+.swiper-button-prev {
+  @apply left-14;
+}
+.swiper-pagination {
+  @apply mt-4 flex justify-center gap-[11px];
+}
+.swiper-pagination-bullet {
+  @apply bg-bluePrimary w-[9px] h-[9px];
+}
+.swiper-pagination-bullet-active {
+  @apply outline outline-1 outline-offset-8;
+}
+
+/* Gallery Section End */

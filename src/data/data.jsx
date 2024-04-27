@@ -24,6 +24,12 @@ import service1 from "../assets/Services/service1.png";
 import service2 from "../assets/Services/service2.png";
 import service3 from "../assets/Services/service3.png";
 import service4 from "../assets/Services/service4.png";
+// Gallery
+import gallery1 from "../assets/Gallery/gallery1.png";
+import gallery2 from "../assets/Gallery/gallery2.jpeg";
+import gallery3 from "../assets/Gallery/gallery3.jpeg";
+import gallery4 from "../assets/Gallery/gallery4.jpeg";
+import gallery5 from "../assets/Gallery/gallery5.jpeg";
 
 const data = {
   navbarRoutes: [
@@ -318,6 +324,14 @@ const data = {
       description:
         "Sakinlərinin təhlükəsizliyini və rahatlığını düşünərək, yüksək keyfiyyətli müşahidə kameraları 7/24 “Bayıl Marina” yaşayış komplesini nəzarət altında saxlayır. Həmçinin mühafizə xidməti də fəaliyyət göstərir, mərkəzi yanğın xəbərdarlığı sistemi var.",
     },
+  ],
+  galleryItems: [
+    { id: 1, img: gallery1 },
+    { id: 2, img: gallery2 },
+    { id: 3, img: gallery3 },
+    { id: 4, img: gallery4 },
+    { id: 5, img: gallery5 },
+    { id: 6, img: gallery3 },
   ],
 };
 
