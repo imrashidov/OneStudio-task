@@ -68,7 +68,7 @@ body {
   @apply max-lg:!left-0 max-lg:!top-0 max-lg:!right-0 max-lg:!flex max-lg:!justify-center;
 }
 .hero-pagination {
-  @apply max-lg:flex-row max-lg:bottom-0 max-lg:self-end max-lg:mb-40 max-lg:items-center max-lg:mr-0 flex flex-col z-[99] items-center justify-center gap-[16px] absolute mr-20 mb-1;
+  @apply max-lg:flex-row max-lg:bottom-0 max-lg:self-end max-lg:mb-hero max-lg:items-center max-lg:mr-0 flex flex-col z-[99] items-center justify-center gap-[16px] absolute mr-20 mb-1;
 }
 .hero-bullet {
   @apply bg-white w-[9px] h-[9px] rounded-full cursor-pointer;
@@ -178,12 +178,6 @@ body {
 }
 .apt-modal-container {
   @apply bg-whiteSecondary mx-2 px-20 pt-16 pb-9 rounded-[20px] z-10 justify-center flex flex-col max-md:px-5 max-md:pt-10 max-md:pb-5;
-}
-.apt-modal-test {
-  @apply hidden opacity-0 relative z-10 transition-all duration-300 ease-in-out;
-}
-.apt-modal-test.active {
-  @apply visible opacity-100 relative z-10 transition-all duration-300 ease-in-out;
 }
 .apt-modal-overlay {
   @apply absolute w-full h-full;
