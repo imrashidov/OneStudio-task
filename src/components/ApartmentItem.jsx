@@ -13,7 +13,11 @@ const ApartmentItem = ({ handleItemClick, active }) => {
           key={item.id}
           onClick={() => handleItemClick(item)}
         >
-          {item.sold === true && <span>Satılıb</span>}
+          {item.sold === true && (
+            <span>
+              <p>Satılıb</p>
+            </span>
+          )}
           <div className="apt-image">
             <img src={item.img} alt="Apartment" />
             <h5>
@@ -45,7 +49,11 @@ const ApartmentItem = ({ handleItemClick, active }) => {
           key={item.id}
           onClick={() => handleItemClick(item)}
         >
-          {item.sold === true && <span>Satılıb</span>}
+          {item.sold === true && (
+            <span>
+              <p>Satılıb</p>
+            </span>
+          )}
           <div className="apt-image">
             <img src={item.img} alt="Apartment" />
             <h5>

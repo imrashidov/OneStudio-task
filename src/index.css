@@ -51,7 +51,7 @@ body {
   @apply !text-white;
 }
 .hero-container {
-  @apply w-full;
+  @apply w-full relative h-hero;
 }
 .swiper-hero {
   @apply max-lg:h-[950px] h-[1100px] w-full z-0 relative;
@@ -77,7 +77,7 @@ body {
   @apply outline outline-1 outline-offset-8 bg-white;
 }
 .hero-main {
-  @apply absolute bottom-52 self-center w-full;
+  @apply absolute bottom-40 self-center w-full;
 }
 .hero-contact {
   @apply max-lg:hidden flex justify-evenly;
@@ -149,7 +149,11 @@ body {
 }
 .apt-item span,
 .apt-item-2 span {
-  @apply bg-red-500 font-semibold py-1 px-4 rounded-md text-white absolute left-10 top-6;
+  @apply bg-red-500 font-semibold flex py-1 px-4 rounded-md text-white absolute left-[26px] top-[26px] w-[70px] h-[27px];
+}
+.apt-item span p,
+.apt-item-2 span p {
+  @apply text-white text-xs self-center;
 }
 .apt-item-2 {
   @apply max-md:hidden;
@@ -170,10 +174,16 @@ body {
 
 /* Apartment Modal Start */
 .apt-modal {
-  @apply bg-grayPrimary/40 items-center flex justify-center fixed z-30 left-0 top-0 w-full h-screen overflow-hidden;
+  @apply transition-all duration-300 ease-in-out bg-grayPrimary/40 items-center flex justify-center fixed z-30 left-0 top-0 w-full h-screen overflow-hidden;
 }
 .apt-modal-container {
   @apply bg-whiteSecondary mx-2 px-20 pt-16 pb-9 rounded-[20px] z-10 justify-center flex flex-col max-md:px-5 max-md:pt-10 max-md:pb-5;
+}
+.apt-modal-test {
+  @apply hidden opacity-0 relative z-10 transition-all duration-300 ease-in-out;
+}
+.apt-modal-test.active {
+  @apply visible opacity-100 relative z-10 transition-all duration-300 ease-in-out;
 }
 .apt-modal-overlay {
   @apply absolute w-full h-full;

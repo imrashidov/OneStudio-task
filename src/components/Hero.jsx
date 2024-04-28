@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 const Hero = () => {
   return (
     <section id="hero">
-      <div className="hero-container relative ">
+      <div className="hero-container">
         <Swiper
           className="swiper-hero"
           direction={"horizontal"}

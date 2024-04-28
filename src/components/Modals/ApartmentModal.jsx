@@ -3,12 +3,22 @@ import modalClose from "../../assets/Modals/modalClose.svg";
 import modalSocial from "../../assets/Modals/modalSocial.svg";
 import modalPhone from "../../assets/Modals/modalPhone.svg";
 import data from "../../data/data";
+import { motion } from "framer-motion";
 
 const ApartmentModal = ({ item, onClose }) => {
+  const modalVariants = {
+    hidden: { opacity: 0, scale: 0.4 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  };
   return (
     <div className="apt-modal">
       <div className="apt-modal-overlay" onClick={onClose}></div>
-      <div className="apt-modal-container">
+      <motion.div
+        className="apt-modal-container"
+        initial="hidden"
+        animate="visible"
+        variants={modalVariants}
+      >
         <div className="apt-modal-main">
           <div className="apt-modal-left">
             <img src={item.img} alt="Apartment" className="apt-modal-img" />
@@ -38,7 +48,7 @@ const ApartmentModal = ({ item, onClose }) => {
         <button onClick={onClose}>
           <img src={modalClose} alt="Close" />
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 };

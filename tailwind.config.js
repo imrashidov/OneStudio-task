@@ -18,6 +18,10 @@ export default {
         grayPrimary: "#868686",
         graySecondary: "#54585F",
       },
+      height: {
+        hero: "calc(100vh + 140px)",
+        heroMobile: "calc(100vh - 60px)",
+      },
     },
   },
   plugins: [],
