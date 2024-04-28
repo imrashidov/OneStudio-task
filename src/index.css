@@ -5,7 +5,9 @@
 * {
   @apply font-medium font-primary text-bluePrimary;
 }
-
+body {
+  @apply relative;
+}
 /* Navbar Start */
 nav * {
   @apply !text-white;
@@ -93,7 +95,7 @@ nav * {
   @apply rounded-t-[30px] top-[-140px] relative bg-whiteSecondary;
 }
 .apt-container .contact-icon {
-  @apply absolute rounded-full right-16 top-3 max-lg:top-[-150px] max-lg:right-8;
+  @apply absolute right-16 lg:top-3 z-10 max-lg:fixed max-lg:bottom-4 max-lg:right-5;
 }
 .apt-info {
   @apply py-28 pl-28 pr-[74px] w-full relative grid grid-cols-2 gap-20 max-lg:py-16 max-lg:px-5 max-lg:justify-center  max-lg:self-center max-lg:flex max-lg:flex-col items-center;
