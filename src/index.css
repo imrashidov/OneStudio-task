@@ -9,7 +9,7 @@ body {
   @apply relative;
 }
 /* Navbar Start */
-nav * {
+.navbar-container * {
   @apply !text-white;
 }
 .navbar-container {
@@ -20,9 +20,6 @@ nav * {
 }
 .navbar-main ul a {
   @apply max-lg:hidden relative  flex justify-center after:border-solid after:invisible hover:after:visible after:border-white after:border-2 after:rounded-full after:absolute after:items-center after:bottom-[-8px]  after:justify-center  after:w-0;
-}
-.navbar-menu {
-  @apply lg:hidden flex items-center;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -42,6 +39,9 @@ nav * {
 }
 .navbar-help select option {
   @apply bg-neutral-400/[0.8];
+}
+.navbar-menu-button {
+  @apply lg:hidden flex items-center;
 }
 
 /* Navbar End */
@@ -372,8 +372,9 @@ footer {
 /* Footer End */
 
 /* Navbar Menu Start */
+
 .menu-main {
-  @apply fixed z-30 h-screen w-full bg-whiteSecondary px-5 top-0 left-[-100%] transition-transform duration-300;
+  @apply fixed z-30 h-screen w-full bg-whiteSecondary px-5 top-0 left-[-100%] transition-transform duration-300 overflow-y-auto;
 }
 .menu-main.active {
   @apply !left-0 !transition-transform !duration-300;
@@ -397,13 +398,13 @@ footer {
   @apply !text-bluePrimary !font-secondary;
 }
 .menu-contact {
-  @apply pt-14 gap-10 flex flex-col;
+  @apply pt-10 gap-10 flex flex-col;
 }
 .menu-contact img svg {
   @apply fill-red-500 stroke-red-500 bg-red-500;
 }
 .menu-social {
-  @apply flex gap-4;
+  @apply flex gap-4 mb-4;
 }
 .menu-social img {
   @apply w-[26px] h-[26px];

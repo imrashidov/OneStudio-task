@@ -51,7 +51,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-main">
           <div className="navbar-left">
-            <button className="navbar-menu" onClick={handleMenu}>
+            <button className="navbar-menu-button" onClick={handleMenu}>
               <img src={menuMobile} alt="Menu" />
             </button>
             <ul>
