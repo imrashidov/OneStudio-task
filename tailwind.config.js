@@ -20,10 +20,6 @@ export default {
       },
       height: {
         hero: "calc(100vh + 140px)",
-        heroMobile: "calc(100vh - 60px)",
-      },
-      margin: {
-        hero: "calc(100vh - 350px)",
       },
     },
   },

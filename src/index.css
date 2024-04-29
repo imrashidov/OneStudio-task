@@ -68,7 +68,7 @@ body {
   @apply max-lg:!left-0 max-lg:!top-0 max-lg:!right-0 max-lg:!flex max-lg:!justify-center;
 }
 .hero-pagination {
-  @apply max-lg:flex-row max-lg:bottom-0 max-lg:self-end max-lg:mb-hero max-lg:items-center max-lg:mr-0 flex flex-col z-[99] items-center justify-center gap-[16px] absolute mr-20 mb-1;
+  @apply max-lg:flex-row max-lg:bottom-0 max-lg:mb-44 max-lg:self-end max-lg:items-center max-lg:mr-0 flex flex-col z-[99] items-center justify-center gap-[16px] absolute lg:mr-20 lg:mb-1;
 }
 .hero-bullet {
   @apply bg-white w-[9px] h-[9px] rounded-full cursor-pointer;

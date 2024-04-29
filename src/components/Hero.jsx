@@ -33,10 +33,8 @@ const Hero = () => {
               <img src={hero} alt="Hero Image" />
             </SwiperSlide>
           ))}
-          <div className="hero-controller">
-            <div className="hero-pagination"></div>
-          </div>
         </Swiper>
+        <div className="hero-pagination"></div>
         <div className="hero-main">
           <div className="hero-contact">
             {data.heroContact.map((contact) => (
