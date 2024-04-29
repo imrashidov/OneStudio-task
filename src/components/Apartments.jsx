@@ -1,5 +1,4 @@
 import { useState } from "react";
-import data from "../data/data";
 import ApartmentItem from "./ApartmentItem";
 import ApartmentModal from "./Modals/ApartmentModal";
 

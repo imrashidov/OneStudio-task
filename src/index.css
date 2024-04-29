@@ -190,37 +190,37 @@ body {
   @apply absolute w-full h-full;
 }
 .apt-modal-main {
-  @apply flex gap-28 max-sm:gap-2;
+  @apply flex gap-28 max-sm:gap-2 max-md:flex-col;
 }
 .apt-modal-left {
-  @apply flex flex-col gap-10;
+  @apply flex flex-col gap-10 max-lg:gap-2;
 }
 .apt-modal-img {
-  @apply w-[250px] h-full object-contain;
+  @apply w-[250px] h-full object-contain max-md:w-full;
 }
 .apt-modal-left-buttons {
-  @apply flex flex-col items-start gap-2;
+  @apply flex flex-col items-start gap-2 max-lg:text-center max-md:items-center;
 }
 .apt-modal-contact {
   @apply bg-white px-5 py-4 max-sm:px-2 max-sm:py-3 rounded-lg flex gap-2 max-w-[220px] w-full;
 }
 .apt-modal-contact p {
-  @apply max-sm:text-sm;
+  @apply max-md:text-sm;
 }
 .apt-modal-right h3 {
-  @apply text-3xl font-semibold max-md:text-2xl;
+  @apply text-3xl font-semibold max-md:text-xl max-md:text-center;
 }
 .apt-modal-details {
-  @apply flex justify-between pt-5;
+  @apply flex justify-between pt-5 max-md:pt-2 max-md:grid max-md:grid-cols-2 max-md:text-center;
 }
 .apt-modal-details li:nth-child(1) {
-  @apply font-semibold;
+  @apply font-semibold max-md:text-sm;
 }
 .apt-modal-details li:nth-child(2) {
-  @apply font-bold text-cyanPrimary;
+  @apply font-bold text-cyanPrimary max-md:text-sm;
 }
 .apt-modal button {
-  @apply mt-12 w-fit flex self-center p-4 rounded-full border;
+  @apply mt-12 w-fit flex self-center p-4 rounded-full border max-md:mt-4;
 }
 
 /* Apartment Modal End */
