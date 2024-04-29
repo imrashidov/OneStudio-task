@@ -1,8 +1,37 @@
-# React + Vite
+<h2 align="center">
+  Bayil Marina Residence <br/>
+</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Built With
 
-Currently, two official plugins are available:
+- React.js
+- React Router
+- Swiper
+- React Helmet
+- Redux
+- Framer Motion
+- json-server
+  
+  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+**🎨 Styled with Tailwind CSS**
+
+**📱 Fully Responsive**
+
+## 🛠 Installation and Setup Instructions
+
+1. Installation: `npm install`
+
+2. In the project directory, you can run: `npm start`
+
+3. To run json-server, you need to go to the "api" folder and type "json-server --watch db.json"
+
+
+
+
+
+
+
+
