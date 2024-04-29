@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchModalAptDetails } from "../../control/modalSlice";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-import modalClose from "../../../public/Modals/modalClose.svg";
-import modalSocial from "../../../public/Modals/modalSocial.svg";
-import modalPhone from "../../../public/Modals/modalPhone.svg";
+import modalClose from "/Modals/modalClose.svg";
+import modalSocial from "/Modals/modalSocial.svg";
+import modalPhone from "/Modals/modalPhone.svg";
 
 const ApartmentModal = ({ item, onClose }) => {
   const modalVariants = {

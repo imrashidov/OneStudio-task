@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchNavbarRoutes, fetchNavbarContact } from "../control/navbarSlice";
 import { NavHashLink } from "react-router-hash-link";
 import { FaChevronUp } from "react-icons/fa6";
-import footerLogo from "../../public/footerLogo.svg";
+import footerLogo from "/footerLogo.svg";
 
 const Footer = () => {
   const scrollToTop = () => {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAboutInfo } from "../control/aboutSlice";
-import contact from "../../public/About/contact.png";
+import contact from "/About/contact.png";
 
 const About = () => {
   const dispatch = useDispatch();

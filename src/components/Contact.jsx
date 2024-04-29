@@ -1,6 +1,6 @@
-import contact1 from "../../public/Contact/contact1.svg";
-import contact2 from "../../public/Contact/contact2.svg";
-import contact3 from "../../public/Contact/contact3.svg";
+import contact1 from "/Contact/contact1.svg";
+import contact2 from "/Contact/contact2.svg";
+import contact3 from "/Contact/contact3.svg";
 
 const Contact = () => {
   return (

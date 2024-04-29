@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchNavbarRoutes, fetchNavbarContact } from "../control/navbarSlice";
 import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
-import logo from "../../public/logo.svg";
-import menuMobile from "../../public/menuMobile.svg";
-import close from "../../public/close.svg";
+import logo from "/logo.svg";
+import menuMobile from "/menuMobile.svg";
+import close from "/close.svg";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(false);
