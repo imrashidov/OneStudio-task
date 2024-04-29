@@ -24,7 +24,7 @@
 
 1. Installation: `npm install`
 
-2. In the project directory, you can run: `npm start`
+2. In the project directory, you can run: `npm run dev`
 
 3. Need to go to the "api" folder and type "json-server --watch db.json" for run json-server
 
