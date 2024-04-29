@@ -1,6 +1,6 @@
 import footerLogo from "../assets/footerLogo.svg";
 import data from "../data/data";
-import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import { FaChevronUp } from "react-icons/fa6";
 
 const Footer = () => {
@@ -18,9 +18,13 @@ const Footer = () => {
           <div className="footer-links">
             <ul>
               {data.navbarRoutes.map((route) => (
-                <Link key={route.id} to={route.route}>
+                <NavHashLink
+                  key={route.id}
+                  to={route.route}
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
+                >
                   {route.name}
-                </Link>
+                </NavHashLink>
               ))}
             </ul>
           </div>

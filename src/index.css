@@ -35,7 +35,7 @@ body {
   @apply max-lg:hidden border border-white px-8 py-[0.625rem] rounded-md hover:bg-white hover:!text-black transition-all duration-300;
 }
 .navbar-help select {
-  @apply max-lg:bg-transparent max-lg:p-0 py-3  px-2 bg-white/10  rounded-md outline-none cursor-pointer;
+  @apply max-lg:bg-transparent max-lg:p-1 py-3  px-2 bg-white/10  rounded-md outline-none cursor-pointer;
 }
 .navbar-help select option {
   @apply bg-neutral-400/[0.8];
@@ -87,36 +87,42 @@ body {
 }
 /* Hero Section End */
 
+/* About Section Start */
+#about {
+  @apply bg-whiteSecondary;
+}
+.about-container {
+  @apply rounded-t-[30px] mt-[-140px] relative bg-whiteSecondary;
+}
+.about-container .contact-icon {
+  @apply absolute right-16 lg:top-3 z-10 max-lg:fixed max-lg:bottom-4 max-lg:right-5;
+}
+.about-info {
+  @apply py-28 pl-28 pr-[74px] w-full relative grid grid-cols-2 gap-20 max-lg:py-16 max-lg:px-5 max-lg:justify-center  max-lg:self-center max-lg:flex max-lg:flex-col items-center;
+}
+.about-left {
+  @apply max-w-[472px] max-lg:max-w-full;
+}
+.about-left h1 {
+  @apply !font-secondary text-5xl font-semibold uppercase mb-6 max-lg:text-4xl;
+}
+.about-right {
+  @apply grid grid-cols-2 h-fit w-full gap-[14px] relative;
+}
+.about-right-info {
+  @apply flex items-center gap-12 px-14 py-9 w-full bg-white rounded-[10px] shadow-md max-lg:flex-col max-lg:items-start max-lg:p-5 max-lg:gap-3;
+}
+.about-right-info img {
+  @apply w-[48px] h-[48px] max-lg:self-start;
+}
+.about-right-info p {
+  @apply font-semibold;
+}
+/* About Section End */
+
 /* Apartments Section Start */
 #apartments {
   @apply bg-whiteSecondary;
-}
-.apt-container {
-  @apply rounded-t-[30px] top-[-140px] relative bg-whiteSecondary;
-}
-.apt-container .contact-icon {
-  @apply absolute right-16 lg:top-3 z-10 max-lg:fixed max-lg:bottom-4 max-lg:right-5;
-}
-.apt-info {
-  @apply py-28 pl-28 pr-[74px] w-full relative grid grid-cols-2 gap-20 max-lg:py-16 max-lg:px-5 max-lg:justify-center  max-lg:self-center max-lg:flex max-lg:flex-col items-center;
-}
-.apt-left {
-  @apply max-w-[472px] max-lg:max-w-full;
-}
-.apt-left h1 {
-  @apply !font-secondary text-5xl font-semibold uppercase mb-6 max-lg:text-4xl;
-}
-.apt-right {
-  @apply grid grid-cols-2 h-fit w-full gap-[14px] relative;
-}
-.apt-right-info {
-  @apply flex items-center gap-12 px-14 py-9 w-full bg-white rounded-[10px] shadow-md max-lg:flex-col max-lg:items-start max-lg:p-5 max-lg:gap-3;
-}
-.apt-right-info img {
-  @apply w-[48px] h-[48px] max-lg:self-start;
-}
-.apt-right-info p {
-  @apply font-semibold;
 }
 .apt-main {
   @apply flex flex-col items-center justify-center pt-2 px-4 pb-20;
@@ -140,6 +146,7 @@ body {
 /* Apartments Section End */
 
 /* Apartment Item Start */
+
 .apt-items {
   @apply mt-10 grid grid-cols-4 gap-9 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1;
 }
@@ -226,7 +233,7 @@ body {
   @apply px-12 pb-40;
 }
 .services-main .main-title {
-  @apply flex items-center justify-center pb-14;
+  @apply flex items-center justify-center pb-14 pt-3;
 }
 
 .services-items {
@@ -257,7 +264,7 @@ body {
   @apply pb-28;
 }
 .gallery-main .main-title {
-  @apply flex items-center justify-center;
+  @apply flex items-center justify-center py-3;
 }
 .swiper-gallery {
   @apply rounded-[15px] overflow-hidden mt-14 h-full py-16 pb-28;

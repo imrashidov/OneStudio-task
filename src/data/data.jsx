@@ -43,27 +43,27 @@ const data = {
     {
       id: 1,
       name: "Haqqımızda",
-      route: "/",
+      route: "/#about",
     },
     {
       id: 2,
       name: "Mənzillər",
-      route: "/",
+      route: "/#apartments",
     },
     {
       id: 3,
       name: "İnfrastruktor",
-      route: "/",
+      route: "/#services",
     },
     {
       id: 4,
       name: "Qalereya",
-      route: "/",
+      route: "/#gallery",
     },
     {
       id: 5,
       name: "Əlaqə",
-      route: "/",
+      route: "/#contact",
     },
     {
       id: 6,

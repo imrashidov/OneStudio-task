@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import data from "../data/data";
 import logo from "../assets/logo.svg";
 import menuMobile from "../assets/menuMobile.svg";
@@ -56,7 +57,13 @@ const Navbar = () => {
             </button>
             <ul>
               {data.navbarRoutes.slice(0, 3).map((route) => (
-                <Link key={route.id}>{route.name}</Link>
+                <NavHashLink
+                  key={route.id}
+                  to={route.route}
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
+                >
+                  {route.name}
+                </NavHashLink>
               ))}
             </ul>
           </div>
@@ -64,7 +71,13 @@ const Navbar = () => {
           <div className="navbar-right">
             <ul>
               {data.navbarRoutes.slice(3, 5).map((route) => (
-                <Link key={route.id}>{route.name}</Link>
+                <NavHashLink
+                  key={route.id}
+                  to={route.route}
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
+                >
+                  {route.name}
+                </NavHashLink>
               ))}
             </ul>
             <div className="navbar-help">
