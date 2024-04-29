@@ -181,7 +181,7 @@ body {
 
 /* Apartment Modal Start */
 .apt-modal {
-  @apply transition-all duration-300 ease-in-out bg-grayPrimary/40 items-center flex justify-center fixed z-30 left-0 top-0 w-full h-screen overflow-hidden;
+  @apply bg-grayPrimary/40 items-center flex justify-center fixed z-30 left-0 top-0 w-full h-screen overflow-hidden;
 }
 .apt-modal-container {
   @apply bg-whiteSecondary mx-2 px-20 pt-16 pb-9 rounded-[20px] z-10 justify-center flex flex-col max-md:px-5 max-md:pt-10 max-md:pb-5;
@@ -190,13 +190,13 @@ body {
   @apply absolute w-full h-full;
 }
 .apt-modal-main {
-  @apply flex gap-28 max-sm:gap-2 max-md:flex-col;
+  @apply flex gap-28 max-sm:gap-2 max-md:flex-col max-md:w-full;
 }
 .apt-modal-left {
   @apply flex flex-col gap-10 max-lg:gap-2;
 }
 .apt-modal-img {
-  @apply w-[250px] h-full object-contain max-md:w-full;
+  @apply w-[250px] h-full object-contain;
 }
 .apt-modal-left-buttons {
   @apply flex flex-col items-start gap-2 max-lg:text-center max-md:items-center;
