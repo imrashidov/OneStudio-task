@@ -1,12 +1,20 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchGalleryItems } from "../control/gallerySlice";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import data from "../data/data";
 
 const Gallery = () => {
+  const dispatch = useDispatch();
+  const { galleryItems } = useSelector((state) => state.gallery);
+
+  useEffect(() => {
+    dispatch(fetchGalleryItems());
+  }, [dispatch]);
   return (
     <section id="gallery">
       <div className="gallery-main">
@@ -62,7 +70,7 @@ const Gallery = () => {
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="swiper-gallery"
         >
-          {data.galleryItems.map((item) => (
+          {galleryItems.map((item) => (
             <SwiperSlide key={item.id} className="swiper-gallery-slide">
               <img src={item.img} alt="slide_image" />
             </SwiperSlide>

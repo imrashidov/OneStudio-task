@@ -1,16 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchNavbarRoutes, fetchNavbarContact } from "../control/navbarSlice";
 import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
-import data from "../data/data";
-import logo from "../assets/logo.svg";
-import menuMobile from "../assets/menuMobile.svg";
-import close from "../assets/close.svg";
+import logo from "../../public/logo.svg";
+import menuMobile from "../../public/menuMobile.svg";
+import close from "../../public/close.svg";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(false);
   const handleMenu = () => {
     setActiveMenu(!activeMenu);
   };
+
+  const dispatch = useDispatch();
+  const { navbarRoutes, navbarContact } = useSelector((state) => state.navbar);
+
+  useEffect(() => {
+    dispatch(fetchNavbarRoutes());
+    dispatch(fetchNavbarContact());
+  }, [dispatch]);
+
   return (
     <nav>
       {activeMenu && (
@@ -21,14 +31,14 @@ const Navbar = () => {
             </button>
             <div className="menu-link">
               <ul>
-                {data.navbarRoutes.slice(0, 5).map((route) => (
+                {navbarRoutes.slice(0, 5).map((route) => (
                   <Link key={route.id}>{route.name}</Link>
                 ))}
               </ul>
               <button>Kataloq</button>
             </div>
             <div className="menu-contact">
-              {data.navbarContact.map((contact) => (
+              {navbarContact.map((contact) => (
                 <div key={contact.id} className="aa flex items-center gap-3 ">
                   {contact.icon && (
                     <img
@@ -42,7 +52,7 @@ const Navbar = () => {
               ))}
             </div>
             <div className="menu-social">
-              {data.navbarContact[2].icons.map((icon) => (
+              {navbarContact[2].icons.map((icon) => (
                 <img key={icon.id} src={icon.icon} alt="icon" />
               ))}
             </div>
@@ -56,7 +66,7 @@ const Navbar = () => {
               <img src={menuMobile} alt="Menu" />
             </button>
             <ul>
-              {data.navbarRoutes.slice(0, 3).map((route) => (
+              {navbarRoutes.slice(0, 3).map((route) => (
                 <NavHashLink
                   key={route.id}
                   to={route.route}
@@ -70,7 +80,7 @@ const Navbar = () => {
           <img src={logo} alt="Brand Logo" />
           <div className="navbar-right">
             <ul>
-              {data.navbarRoutes.slice(3, 5).map((route) => (
+              {navbarRoutes.slice(3, 5).map((route) => (
                 <NavHashLink
                   key={route.id}
                   to={route.route}

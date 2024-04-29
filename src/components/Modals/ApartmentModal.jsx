@@ -1,15 +1,25 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchModalAptDetails } from "../../control/modalSlice";
 import PropTypes from "prop-types";
-import modalClose from "../../assets/Modals/modalClose.svg";
-import modalSocial from "../../assets/Modals/modalSocial.svg";
-import modalPhone from "../../assets/Modals/modalPhone.svg";
-import data from "../../data/data";
 import { motion } from "framer-motion";
+import modalClose from "../../../public/Modals/modalClose.svg";
+import modalSocial from "../../../public/Modals/modalSocial.svg";
+import modalPhone from "../../../public/Modals/modalPhone.svg";
 
 const ApartmentModal = ({ item, onClose }) => {
   const modalVariants = {
     hidden: { opacity: 0, scale: 0.4 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
   };
+
+  const dispatch = useDispatch();
+  const { modalAptDetails } = useSelector((state) => state.modal);
+
+  useEffect(() => {
+    dispatch(fetchModalAptDetails());
+  }, [dispatch]);
+
   return (
     <div className="apt-modal">
       <div className="apt-modal-overlay" onClick={onClose}></div>
@@ -37,7 +47,7 @@ const ApartmentModal = ({ item, onClose }) => {
             <h3 className="">
               {item.room}-{item.area}
             </h3>
-            {data.modalAptDetails.map((item) => (
+            {modalAptDetails.map((item) => (
               <ul className="apt-modal-details" key={item.id}>
                 <li>{item.title}</li>
                 <li>{item.value}</li>

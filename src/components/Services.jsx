@@ -1,6 +1,15 @@
-import data from "../data/data";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchServices } from "../control/servicesSlice";
 
 const Services = () => {
+  const dispatch = useDispatch();
+  const { services } = useSelector((state) => state.services);
+
+  useEffect(() => {
+    dispatch(fetchServices());
+  }, [dispatch]);
+
   return (
     <section id="services">
       <div className="services-container">
@@ -9,7 +18,7 @@ const Services = () => {
             <h1>XİDMƏTLƏR</h1>
           </div>
           <div className="services-items">
-            {data.services.map((service) => {
+            {services.map((service) => {
               const isEven = service.id % 2 === 0;
               return (
                 <div

@@ -1,7 +1,9 @@
-import footerLogo from "../assets/footerLogo.svg";
-import data from "../data/data";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchNavbarRoutes, fetchNavbarContact } from "../control/navbarSlice";
 import { NavHashLink } from "react-router-hash-link";
 import { FaChevronUp } from "react-icons/fa6";
+import footerLogo from "../../public/footerLogo.svg";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -10,6 +12,13 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
+  const dispatch = useDispatch();
+  const { navbarRoutes } = useSelector((state) => state.navbar);
+
+  useEffect(() => {
+    dispatch(fetchNavbarRoutes());
+    dispatch(fetchNavbarContact());
+  }, [dispatch]);
   return (
     <footer>
       <div className="footer-container">
@@ -17,7 +26,7 @@ const Footer = () => {
           <img src={footerLogo} alt="" />
           <div className="footer-links">
             <ul>
-              {data.navbarRoutes.map((route) => (
+              {navbarRoutes.map((route) => (
                 <NavHashLink
                   key={route.id}
                   to={route.route}

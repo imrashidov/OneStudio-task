@@ -1,7 +1,15 @@
-import data from "../data/data";
-import contact from "../assets/ApartmentsInfo/contact.png";
+import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchAboutInfo } from "../control/aboutSlice";
+import contact from "../../public/About/contact.png";
 
 const About = () => {
+  const dispatch = useDispatch();
+  const { aboutInfo } = useSelector((state) => state.about);
+
+  useEffect(() => {
+    dispatch(fetchAboutInfo());
+  }, [dispatch]);
   return (
     <section id="about">
       <div className="about-container">
@@ -26,7 +34,7 @@ const About = () => {
             </p>
           </div>
           <div className="about-right">
-            {data.aptInfo.map((item) => (
+            {aboutInfo.map((item) => (
               <div key={item.id} className="about-right-info">
                 <img src={item.icon} alt={item.title} />
                 <p>{item.title}</p>

@@ -1,12 +1,21 @@
-import data from "../data/data";
-import hero from "../assets/Hero/hero.png";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchHeroImg, fetchHeroContact } from "../control/heroSlice";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/pagination";
+import hero from "../../public/Hero/hero.png";
 
 const Hero = () => {
+  const dispatch = useDispatch();
+  const { heroImg, heroContact } = useSelector((state) => state.hero);
+
+  useEffect(() => {
+    dispatch(fetchHeroImg());
+    dispatch(fetchHeroContact());
+  }, [dispatch]);
+
   return (
     <section id="hero">
       <div className="hero-container">
@@ -28,7 +37,7 @@ const Hero = () => {
             },
           }}
         >
-          {data.heroImg.map((img) => (
+          {heroImg.map((img) => (
             <SwiperSlide key={img.id} className="swiper-hero-slide">
               <img src={hero} alt="Hero Image" />
             </SwiperSlide>
@@ -37,7 +46,7 @@ const Hero = () => {
         <div className="hero-pagination"></div>
         <div className="hero-main">
           <div className="hero-contact">
-            {data.heroContact.map((contact) => (
+            {heroContact.map((contact) => (
               <div key={contact.id} className="contact-items">
                 {contact.icon && <img src={contact.icon} alt="icon" />}
                 <p>{contact.text}</p>

@@ -1,0 +1,338 @@
+{
+  "navbarRoutes": [
+    {
+      "id": 1,
+      "name": "Haqqımızda",
+      "route": "/#about"
+    },
+    {
+      "id": 2,
+      "name": "Mənzillər",
+      "route": "/#apartments"
+    },
+    {
+      "id": 3,
+      "name": "İnfrastruktor",
+      "route": "/#services"
+    },
+    {
+      "id": 4,
+      "name": "Qalereya",
+      "route": "/#gallery"
+    },
+    {
+      "id": 5,
+      "name": "Əlaqə",
+      "route": "/#contact"
+    },
+    {
+      "id": 6,
+      "name": "Kataloq",
+      "route": "/"
+    }
+  ],
+  "heroImg": [
+    { "id": 1, "img": "../Hero/hero.png" },
+    { "id": 2, "img": "../Hero/hero.png" },
+    { "id": 3, "img": "../Hero/hero.png" }
+  ],
+  "heroContact": [
+    {
+      "id": 1,
+      "icon": "../Hero/phone.svg",
+      "text": "(+994 77) 350-00-05"
+    },
+    {
+      "id": 2,
+      "icon": "../Hero/location.svg",
+      "text": "Bayıl Neftçi Qurban Abbasov küçəsi 42/44"
+    },
+    {
+      "id": 3,
+      "title": "Sosial:",
+      "icons": [
+        { "id": 1, "icon": "../Hero/social1.svg" },
+        { "id": 2, "icon": "../Hero/social2.svg" },
+        { "id": 3, "icon": "../Hero/social3.svg" }
+      ]
+    }
+  ],
+  "navbarContact": [
+    {
+      "id": 1,
+      "icon": "../Navbar/phone2.svg",
+      "text": "(+994 77) 350-00-05"
+    },
+    {
+      "id": 2,
+      "icon": "../Navbar/location2.svg",
+      "text": "Bayıl Neftçi Qurban Abbasov küçəsi 42/44"
+    },
+    {
+      "id": 3,
+      "title": "Sosial:",
+      "icons": [
+        { "id": 1, "icon": "../Navbar/social4.svg" },
+        { "id": 2, "icon": "../Navbar/social5.svg" },
+        { "id": 3, "icon": "../Navbar/social6.svg" }
+      ]
+    }
+  ],
+  "aboutInfo": [
+    {
+      "id": 1,
+      "title": "Şəhərin Mərkəzində",
+      "icon": "../About/about1.svg"
+    },
+    {
+      "id": 2,
+      "title": "Dənizə mənzərəli",
+      "icon": "../About/about2.svg"
+    },
+    {
+      "id": 3,
+      "title": "Yüksək Tavan",
+      "icon": "../About/about3.svg"
+    },
+    {
+      "id": 4,
+      "title": "Yeraltı parklama",
+      "icon": "../About/about4.svg"
+    },
+    {
+      "id": 5,
+      "title": "7/24 muhafizə xidməti",
+      "icon": "../About/about5.svg"
+    },
+    {
+      "id": 6,
+      "title": "Geniş uşaq meydançası",
+      "icon": "../About/about6.svg"
+    }
+  ],
+  "aptItemsB": [
+    {
+      "id": 1,
+      "img": "../Apartments/apt1.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - B",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "149,61m²",
+      "sold": false
+    },
+    {
+      "id": 2,
+      "img": "../Apartments/apt2.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - B",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "154,44m²",
+      "sold": true
+    },
+    {
+      "id": 3,
+      "img": "../Apartments/apt3.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - B",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "4 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "173,64m²",
+      "sold": false
+    },
+    {
+      "id": 4,
+      "img": "../Apartments/apt4.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - B",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "149,61m²",
+      "sold": false
+    },
+    {
+      "id": 5,
+      "img": "../Apartments/apt3.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - B",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "4 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "173,64m²",
+      "sold": false
+    },
+    {
+      "id": 6,
+      "img": "../Apartments/apt4.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - B",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "149,61m²",
+      "sold": false
+    },
+    {
+      "id": 7,
+      "img": "../Apartments/apt1.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - B",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "149,61m²",
+      "sold": false
+    },
+    {
+      "id": 8,
+      "img": "../Apartments/apt2.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - A",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "154,44m²",
+      "sold": true
+    }
+  ],
+  "aptItemsA": [
+    {
+      "id": 1,
+      "img": "../Apartments/apt2.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - A",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "149,61m²",
+      "sold": true
+    },
+    {
+      "id": 2,
+      "img": "../Apartments/apt3.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - A",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "154,44m²",
+      "sold": false
+    },
+    {
+      "id": 3,
+      "img": "../Apartments/apt4.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - A",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "4 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "173,64m²",
+      "sold": false
+    },
+    {
+      "id": 4,
+      "img": "../Apartments/apt1.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - A",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "149,61m²",
+      "sold": false
+    },
+    {
+      "id": 5,
+      "img": "../Apartments/apt4.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - A",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "4 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "173,64m²",
+      "sold": false
+    },
+    {
+      "id": 6,
+      "img": "../Apartments/apt1.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - A",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "149,61m²",
+      "sold": true
+    },
+    {
+      "id": 7,
+      "img": "../Apartments/apt2.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - A",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "149,61m²",
+      "sold": false
+    },
+    {
+      "id": 8,
+      "img": "../Apartments/apt3.png",
+      "aptIcon": "../Apartments/aptIcon1.svg",
+      "apartment": "Blok - A",
+      "roomIcon": "../Apartments/aptIcon2.svg",
+      "room": "3 otaq",
+      "areaIcon": "../Apartments/aptIcon3.svg",
+      "area": "154,44m²",
+      "sold": false
+    }
+  ],
+  "modalAptDetails": [
+    { "id": 1, "title": "Salon", "value": "38.4m²" },
+    { "id": 2, "title": "Yataq otağı 1", "value": "12.4m²" },
+    { "id": 3, "title": "Yataq otağı 2", "value": "8.4m²" },
+    { "id": 4, "title": "Yataq otağı 3", "value": "14.4m²" },
+    { "id": 5, "title": "Mətbəx", "value": "4.4m" },
+    { "id": 6, "title": "Dəhliz", "value": "5.4m²" },
+    { "id": 7, "title": "S.Q 1", "value": "3.2m²" },
+    { "id": 8, "title": "S.Q 2", "value": "4.6m²" },
+    { "id": 9, "title": "Eyvan", "value": "3.3m²" }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "img": "../Services/service1.png",
+      "title": "Uşaq Meydançası və yaşıl həyət",
+      "description": "Hər bir ehtiyac və rahatlığınız üçün uşaq bağçası və uşaq klubu, uşaqlar üçün kafe, həyətdə oturacaqlar, fantan, oyun meydançası, yaşlı adamların istirahəti üçün isə söhbətgahlar mövcuddur."
+    },
+    {
+      "id": 2,
+      "img": "../Services/service2.png",
+      "title": "Texniki Özəllİklər",
+      "description": "“Bayıl Marina” - da dünyaca məşhur olan “REHAU” pəncərə sistemləri quraşdırılıb, həmçinin yüksək keyfiyyəti ilə seçilən sürətli və səssiz olan “AKONE” liftləri ilə təchiz olunub.Bütün müasir sistemlər beynəlxalq standartlarına uyğundur və təhlükəsizlik tələblərinə cavab verir. “Bayıl Marina”- da rahatlığınız üçün hər bir şərait var. "
+    },
+    {
+      "id": 3,
+      "img": "../Services/service3.png",
+      "title": "Geniş Yeraltı Parkİng",
+      "description": "Binanın geniş yeraltı parkinqi mövcuddur və ərazinin təhlükəsizliyi fasiləsiz video müşahidə kameraları vasitəsilə təmin edilir. Sakinlər parkinqdən liftlərlə birbaşa mənzillərə qalxa bilərlər."
+    },
+    {
+      "id": 4,
+      "img": "../Services/service4.png",
+      "title": "Təhlükəsizliyiniz Prinsipimizdir!",
+      "description": ""
+    }
+  ],
+  "galleryItems": [
+    { "id": 1, "img": "../Gallery/gallery1.png" },
+    { "id": 2, "img": "../Gallery/gallery2.jpeg" },
+    { "id": 3, "img": "../Gallery/gallery3.jpeg" },
+    { "id": 4, "img": "../Gallery/gallery4.jpeg" },
+    { "id": 5, "img": "../Gallery/gallery5.jpeg" },
+    { "id": 6, "img": "../Gallery/gallery3.jpeg" }
+  ]
+}
