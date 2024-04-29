@@ -26,7 +26,7 @@
 
 2. In the project directory, you can run: `npm start`
 
-3. To run json-server, you need to go to the "api" folder and type "json-server --watch db.json"
+3. Need to go to the "api" folder and type "json-server --watch db.json" for run json-server
 
 
 
