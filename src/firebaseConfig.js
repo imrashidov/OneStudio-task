@@ -14,13 +14,3 @@ export const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
-// apiKey: "AIzaSyCB97_LPfJYK2QfGZCKayluhtitfl5PVy4",
-// authDomain: "onestudio-task.firebaseapp.com",
-// databaseURL:
-//   "https://onestudio-task-default-rtdb.europe-west1.firebasedatabase.app",
-// projectId: "onestudio-task",
-// storageBucket: "onestudio-task.appspot.com",
-// messagingSenderId: "969553734666",
-// appId: "1:969553734666:web:96fa3ed9a1e54cb42bc3f3",
-// measurementId: "G-313DDSL4JP",
