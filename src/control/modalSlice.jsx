@@ -1,11 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { getDatabase, get, ref } from "firebase/database";
+import { firebaseConfig } from "../firebaseConfig";
 
 export const fetchModalAptDetails = createAsyncThunk(
   "modal/fetchModalAptDetails",
   async () => {
-    const response = await fetch("http://localhost:3000/modalAptDetails");
-    const data = await response.json();
-    return data;
+    const db = getDatabase();
+    const modalAptDetailsRef = ref(db, "/modalAptDetails");
+    const snapshot = await get(modalAptDetailsRef);
+    return snapshot.val();
   }
 );
 

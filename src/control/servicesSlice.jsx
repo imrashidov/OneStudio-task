@@ -1,11 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { getDatabase, get, ref } from "firebase/database";
+import { firebaseConfig } from "../firebaseConfig";
 
 export const fetchServices = createAsyncThunk(
   "services/fetchServices",
   async () => {
-    const response = await fetch("http://localhost:3000/services");
-    const data = await response.json();
-    return data;
+    const db = getDatabase();
+    const servicesRef = ref(db, "/services");
+    const snapshot = await get(servicesRef);
+    return snapshot.val();
   }
 );
 

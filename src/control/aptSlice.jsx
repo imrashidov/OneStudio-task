@@ -1,20 +1,24 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { getDatabase, get, ref } from "firebase/database";
+import { firebaseConfig } from "../firebaseConfig";
 
 export const fetchAptItemsB = createAsyncThunk(
   "apt/fetchAptItemsB",
   async () => {
-    const response = await fetch("http://localhost:3000/aptItemsB");
-    const data = await response.json();
-    return data;
+    const db = getDatabase();
+    const aptItemsBRef = ref(db, "/aptItemsB");
+    const snapshot = await get(aptItemsBRef);
+    return snapshot.val();
   }
 );
 
 export const fetchAptItemsA = createAsyncThunk(
   "apt/fetchAptItemsA",
   async () => {
-    const response = await fetch("http://localhost:3000/aptItemsA");
-    const data = await response.json();
-    return data;
+    const db = getDatabase();
+    const aptItemsARef = ref(db, "/aptItemsA");
+    const snapshot = await get(aptItemsARef);
+    return snapshot.val();
   }
 );
 

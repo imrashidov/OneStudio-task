@@ -1,11 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { getDatabase, get, ref } from "firebase/database";
+import { firebaseConfig } from "../firebaseConfig";
 
 export const fetchGalleryItems = createAsyncThunk(
   "gallery/fetchGalleryItems",
   async () => {
-    const response = await fetch("http://localhost:3000/galleryItems");
-    const data = await response.json();
-    return data;
+    const db = getDatabase();
+    const galleryItemsRef = ref(db, "/galleryItems");
+    const snapshot = await get(galleryItemsRef);
+    return snapshot.val();
   }
 );
 

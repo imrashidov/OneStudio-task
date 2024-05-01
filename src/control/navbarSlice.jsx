@@ -1,20 +1,29 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { getDatabase, get, ref } from "firebase/database";
+import { firebaseConfig } from "../firebaseConfig";
 
 export const fetchNavbarRoutes = createAsyncThunk(
   "navbar/fetchNavbarRoutes",
   async () => {
-    const response = await fetch("http://localhost:3000/navbarRoutes");
-    const data = await response.json();
-    return data;
+    const db = getDatabase();
+    const navbarRoutesRef = ref(db, "/navbarRoutes");
+    const snapshot = await get(navbarRoutesRef);
+    if (snapshot.exists()) {
+      return snapshot.val();
+    } else {
+      console.log("No data available");
+      return {};
+    }
   }
 );
-
+console.log(import.meta.env.FIREBASE_API_KEY);
 export const fetchNavbarContact = createAsyncThunk(
   "navbar/fetchNavbarContact",
   async () => {
-    const response = await fetch("http://localhost:3000/navbarContact");
-    const data = await response.json();
-    return data;
+    const db = getDatabase();
+    const navbarContactRef = ref(db, "/navbarContact");
+    const snapshot = await get(navbarContactRef);
+    return snapshot.val();
   }
 );
 
