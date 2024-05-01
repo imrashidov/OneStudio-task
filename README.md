@@ -1,6 +1,11 @@
 <h2 align="center">
   Bayil Marina Residence <br/>
+  <a href="https://one-studio-task.surge.sh/" target="_blank">Surge.sh</a>
 </h2>
+
+<div align="center">
+  <img alt="Screenshot" src="./src/assets/Screenshot.png" />
+</div>
 
 ## Built With
 
