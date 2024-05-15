@@ -1,6 +1,6 @@
 <h2 align="center">
   Bayil Marina Residence <br/>
-  <a href="https://one-studio-task.surge.sh/" target="_blank">Surge.sh</a>
+  <a href="https://bayilmarina.surge.sh/" target="_blank">Surge.sh</a>
 </h2>
 
 <div align="center">
@@ -16,8 +16,6 @@
 - Redux
 - Framer Motion
 - json-server
-  
-  
 
 ## Features
 
@@ -32,11 +30,3 @@
 2. In the project directory, you can run: `npm run dev`
 
 3. Need to go to the "api" folder and type "json-server --watch db.json" for run json-server
-
-
-
-
-
-
-
-
